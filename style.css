@@ -1,0 +1,83 @@
+.main-header {
+  background-color: rgb(16, 85, 212);
+  color:white
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+
+}
+
+h2 {
+  padding-top: 100px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  color:deepskyblue;
+  background: cover;
+  background-color: rgb(67, 46, 182);
+  display: inline-block;
+  justify-content: flex-end;
+}
+
+.topnav {
+  width: 700px;
+  border: 15px solid rgb(49, 0, 128);
+  padding: 50px;
+  margin: 20px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+h1 {
+  color: deepskyblue;
+  background: rgb(133, 125, 175)
+  display::backdrop
+  size:transparent
+  justify-content: space-between;;
+}
+
+
+
+element.style {
+}
+body {
+    display: block;
+    margin: 8px;
+    background-color: rgb(35, 30, 107);
+}
+
+ol {
+  color:deepskyblue;
+  width: 700px;
+  font-style: italic;
+  font-size:x-large;
+  background-color: rgb(24, 7, 92);
+  justify-content:stretch;
+  align-items: flex-end;
+
+}
+
+div {
+  padding: 10px;
+  width: 700px;
+  font-stretch: narrower;
+  font-size: xx-large;
+  color: deepskyblue;
+  background: rgb(11, 4, 37);
+  justify-content: space-between;
+  align-items: center;
+}
+
+border: none
+
+
+
+
+div :hover {
+  color: brown;
+  background-position: center;
+}
+
+ol :hover {
+  color: brown;
+}

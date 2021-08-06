@@ -1,10 +1,9 @@
 .main-header {
   background-color: rgb(16, 85, 212);
-  color:white;
+  color: white;
   position: sticky;
   top: 0px;
   z-index: 3;
-
 }
 
 h2 {
@@ -12,8 +11,8 @@ h2 {
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
-  color:deepskyblue;
-  background: cover;
+  color: deepskyblue;
+  /* background: */
   background-color: rgb(67, 46, 182);
   display: inline-block;
   justify-content: flex-end;
@@ -30,48 +29,40 @@ h2 {
 
 h1 {
   color: deepskyblue;
-  background: rgb(133, 125, 175)
-  display::backdrop
-  size:transparent
-  justify-content: space-between;;
+  background: rgb(133, 125, 175);
+  display: flex;
+  /* size: */
+  justify-content: space-between;
 }
 
-
-
-element.style {
-}
+/* element.style {
+} */
 body {
-    display: block;
-    margin: 8px;
-    background-color: rgb(35, 30, 107);
+  display: block;
+  margin: 8px;
+  background-color: rgb(35, 30, 107);
 }
 
 ol {
-  color:deepskyblue;
+  color: deepskyblue;
   width: 700px;
   font-style: italic;
-  font-size:x-large;
+  font-size: x-large;
   background-color: rgb(24, 7, 92);
-  justify-content:stretch;
+  justify-content: stretch;
   align-items: flex-end;
-
 }
 
 div {
   padding: 10px;
   width: 700px;
-  font-stretch: narrower;
+  /* font-stretch: narrow; */
   font-size: xx-large;
   color: deepskyblue;
   background: rgb(11, 4, 37);
   justify-content: space-between;
   align-items: center;
 }
-
-border: none
-
-
-
 
 div :hover {
   color: brown;

@@ -12,10 +12,14 @@ h2 {
   padding-bottom: 5px;
   padding-left: 10px;
   color: deepskyblue;
-  /* background: */
   background-color: rgb(67, 46, 182);
-  display: inline-block;
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:stretch;
+  text-align:space-around;
+  border-radius: 0; padding: 0;
+
+
 }
 
 .topnav {
@@ -25,6 +29,43 @@ h2 {
   margin: 20px;
   display: inline-block;
   justify-content: space-between;
+  text-align: center;
+
+}
+
+
+nav > ul > li {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 0.5rem 0.5rem;
+  border-radius: 25px;
+  text-align:end;
+  border-radius: 0; padding: 0;
+  position: absolute; top: 100%;
+  display: none; }
+}
+
+nav > .fa-bars {
+  display: none;
+}
+
+#Blog {
+  margin-right: 3rem;
+}
+
+#Blog img {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+#Contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  background-color: white;
+}
 }
 
 h1 {
@@ -41,6 +82,11 @@ body {
   display: block;
   margin: 8px;
   background-color: rgb(35, 30, 107);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  height: auto;
+  width: 92.5%;
+  margin: auto;
 }
 
 ol {
@@ -64,6 +110,19 @@ div {
   align-items: center;
 }
 
+#jumbotron {
+  display: flex;
+align-items: flex-end;
+justify-content:right
+  text-decoration: none;
+  border: 1px solid;
+  padding: 0.5rem 0.5rem;
+  border-radius: 25px;
+  text-align:center;
+  border-radius: 0; padding: 0;
+  position:-webkit-sticky top: 125%;
+}
+
 div :hover {
   color: brown;
   background-position: center;
@@ -72,3 +131,18 @@ div :hover {
 ol :hover {
   color: brown;
 }
+
+#weather {
+  display: flex;
+align-items: flex-end;
+justify-content: space-around;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 0.5rem 0.5rem;
+  border-radius: 25px;
+  text-align:center;
+  border-radius: 0; padding: 0;
+  position: absolute; top: 100%;
+}
+
+

@@ -79,3 +79,4 @@ router
     ":page": params => render(state[capitalize(params.page)])
   })
   .resolve();
+

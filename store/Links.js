@@ -14,5 +14,9 @@ export default [
   {
     title: "About",
     text: "About"
+  },
+  {
+    title: "Blog",
+    text: "Blog"
   }
 ];

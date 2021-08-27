@@ -52,10 +52,11 @@ app.get("/status", (request, response) => {
 app
   .route("/")
   .get((request, response) => {
-    response.send(
-      JSON.stringify({ message: "No GET routes available on root URI." }),
-      404
-    );
+    response
+      .status(200)
+      .send(
+        JSON.stringify({ message: "No GET routes available on root URI." })
+      );
   })
   .post((request, response) => {
     response.send(

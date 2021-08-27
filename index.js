@@ -40,6 +40,13 @@ function addEventListeners(st) {
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
 }
+
+function addEventListeners(st) {
+  if (st.view === "Order") {
+  }
+}
+
+
 router.hooks({
   before: (done, params) => {
     const page =

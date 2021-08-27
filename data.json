@@ -1,18 +1,1 @@
-[{
-  "id":6451445865
-  "name": "Meat",
-  "type": "pork",
-  "match": "lamb"
-},
-{
-  "id":6451445865
-  "name": "Meat",
-  "age": 26,
-  "gender": "male"
-},
-{
-  "name": "Meat",
-  "age": 26,
-  "gender": "male"
-}
-]
+

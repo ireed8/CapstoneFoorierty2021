@@ -24,6 +24,12 @@ function render(st = state.Home) {
   // eslint-disable-next-line no-undef
   addEventListeners(st);
 }
+// function data {
+//   fetch("/")
+//     .then(response => response.json);
+//     .then (datat => console.log(data));
+// }
+
 function addEventListeners(st) {
   // add event listeners to Nav items for navigation
   document.querySelectorAll("nav a").forEach(navLink =>

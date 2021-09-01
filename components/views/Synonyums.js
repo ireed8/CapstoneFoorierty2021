@@ -10,32 +10,33 @@ export default () => `
       <option value="beef">Beef</option>
       <option value="pork">Pork</option>
       <option value="fish">Fish</option>
-      <option value="chicken">HellChicken</option>
+      <option value="chicken">Chicken</option>
       <option value="turkey">Turkey</option>
       <option value="lamb">Lamb</option>
     </select>
   </div>
   <div>
-    <label for="cheese">Cheese:</label>
-    <input type="text" name="cheese" id="cheese" placeholder="Enter Cheese" required>
+    <label for="vegetable">Vegetable:</label>
+    <input type="text" name="cheese" id="vegetable" placeholder="Enter Vegetable" required>
   </div>
   <div>
-    <label for="sauce">Sauce:</label>
-    <input type="text" name="sauce" id="sauce" placeholder="Enter Sauce" required>
+    <label for="starch">Starch:</label>
+    <input type="text" name="starch" id="sauce" placeholder="Enter Starch" required>
   </div>
   <div>
-    <label for="toppings">Toppings:</label>
-    <input type="checkbox" id="id_of_checkbox1" class="items1" name="toppings" value="Chicken">
-    <label for="top1">chicken</label>
-    <input type="checkbox" id="id_of_checkbox2" class="items1" name="toppings" value="onion">
-    <label for="top2">onion</label>
-    <input type="checkbox" id="id_of_checkbox3" class="items1" name="toppings" value="spinach">
-    <label for="top3">spinach</label>
-    <input type="checkbox" id="id_of_checkbox4" class="items1" name="toppings" value="Extra cheese">
-    <label for="top4">extra cheese</label>
-    <input type="checkbox" id="id_of_checkbox5" class="items1" name="toppings" value="red pepper">
-    <label for="top5">red pepper</label>
+    <label for="nutrition">Nutrition:</label>
+    <input type="checkbox" id="id_of_checkbox1" class="items1" name="nutrition" value="Calories">
+    <label for="top1">Carbs</label>
+    <input type="checkbox" id="id_of_checkbox2" class="items1" name="nutrition" value="Carbs">
+    <label for="top2">Fat</label>
+    <input type="checkbox" id="id_of_checkbox3" class="items1" name="nutrition" value="Fat">
+    <label for="top3">Protein</label>
+    <input type="checkbox" id="id_of_checkbox4" class="items1" name="nutrition" value="Protein">
+    <label for="top4">Fiber</label>
+    <input type="checkbox" id="id_of_checkbox5" class="items1" name="nutrition" value="Fiber">
+    <label for="top5">Sugar</label>
+    <input type="checkbox" id="id_of_checkbox5" class="items1" name="nutrition" value="Sugar">
   </div>
-  <input type="submit" name="submit" value="Submit Pizza">
+  <input type="submit" name="submit" value="Submit Synonyums">
 </form>
 `;

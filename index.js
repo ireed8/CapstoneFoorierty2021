@@ -47,7 +47,7 @@ function addEventListeners(st) {
     );
 }
 
-function addEventListeners(st) {
+function addEventListeners() {
   if (st.view === "Order") {
   }
 }
@@ -76,30 +76,18 @@ router.hooks({
           .catch(err => console.log(err));
         break;
 
-      case "Home":
-        axios
-          .get(
-            `https://api.openweathermap.org/data/2.5/weather?q=st.%20louis&appid=${process.env.WEATHER_API_KEY}`
-          )
-          .then(response => {
-            state.Home.weather = {};
-            // console.log(response, state.Home.weather);
-            state.Home.weather.city = response.data.name;
-            state.Home.weather.temp = response.data.main.temp;
-            state.Home.weather.feelsLike = response.data.main.feels_like;
-            state.Home.weather.humidity = response.data.main.humidity;
-            state.Home.weather.description =
-              response.data.weather[0]["description"];
-            done();
-          })
-          .catch(err => console.log(err));
-        break;
+        case "Home":
+          axios
+            .get(`/api/recipes/v2`)
+            .then(response => {
+              state.Home.data = {};
 
-      default:
-        done();
+              done();
+            })
+            .catch(err => console.log(err));
+      }
     }
-  }
-});
+  });
 
 router
   .on({

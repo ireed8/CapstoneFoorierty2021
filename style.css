@@ -10,7 +10,7 @@ h2 {
 }
 
 .topnav {
-  width: 700px;
+  width: 900px;
   border: 15px solid rgb(82, 140, 226);
   padding: 50px;
   margin: 20px;
@@ -29,6 +29,8 @@ nav > ul > li {
   position: absolute;
   background: rrgb(162, 160, 170));
   top: 100%;
+  width: 100%;
+
 }
 
 
@@ -106,12 +108,12 @@ div {
 } */
 
 div :hover {
-  color: rgb(120, 221, 209);
+  color: rgb(162, 160, 170));
 
 }
 
 ol :hover {
-  color: rgb(120, 221, 209);
+  color: rgb(162, 160, 170));
 }
 
 #weather {

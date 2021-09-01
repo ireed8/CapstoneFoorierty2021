@@ -12,10 +12,6 @@ export default [
     text: "Contact"
   },
   {
-    title: "About",
-    text: "About"
-  },
-  {
     title: "Blog",
     text: "Blog"
   },

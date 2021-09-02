@@ -6,10 +6,24 @@ import { capitalize } from "lodash";
 import dotenv from "dotenv";
 import axios from "axios";
 
+const cors = (req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type, Accept,Authorization,Origin"
+  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader("Access-Control-Allow-Credentials", true);
+  next();
+};
+
 dotenv.config();
 
 const router = new Navigo(window.location.origin);
-console.log("ivan-process.env: ", process.env);
+// console.log("ivan-process.env: ", process.env);
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
@@ -47,11 +61,10 @@ function addEventListeners(st) {
     );
 }
 
-function addEventListeners() {
-  if (st.view === "Order") {
-  }
-}
-
+// function addEventListeners(st) {
+//   if (st.view === "Order") {
+//   }
+// }
 
 router.hooks({
   before: (done, params) => {
@@ -76,18 +89,20 @@ router.hooks({
           .catch(err => console.log(err));
         break;
 
-        case "Home":
-          axios
-            .get(`/api/recipes/v2`)
-            .then(response => {
-              state.Home.data = {};
+      case "Home":
+        axios
+          .get(
+            `https://api.edamam.com/api/recipes/v2?type=public&q=fish&app_id=f0844243&app_key=a862c1a1db33241e55b7dcc323c93cfa`
+          )
+          .then(response => {
+            state.Home.hits = {};
 
-              done();
-            })
-            .catch(err => console.log(err));
-      }
+            done();
+          })
+          .catch(err => console.log(err));
     }
-  });
+  }
+});
 
 router
   .on({

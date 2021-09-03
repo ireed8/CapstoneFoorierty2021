@@ -90,13 +90,20 @@ router.hooks({
         break;
 
       case "Home":
+        state.Home.hits = [];
+
         axios
           .get(
             `https://api.edamam.com/api/recipes/v2?type=public&q=fish&app_id=f0844243&app_key=a862c1a1db33241e55b7dcc323c93cfa`
           )
           .then(response => {
-            state.Home.hits = {};
-
+            response.data.hits.forEach(hit => {
+              // console.log("hit hit"), hit.recipe);
+              state.Home.hits.push({
+                label: hit.recipe.label,
+                image: hit.recipe.image
+              });
+            });
             done();
           })
           .catch(err => console.log(err));

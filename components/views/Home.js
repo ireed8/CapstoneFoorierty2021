@@ -17,8 +17,8 @@ export default st => html`
   >
   </section>
 
-  <h4 id="recipe">
-    Temperature in ${st.title.hits}, and the weather is ...
-    ${st.hits.recipe}
-  </h4>
+<h3 id="hits">
+The Recipe ${st.hits.recipe} is
+${st.hits.recipe}, and it Taste Great!
+</h3>
 `;

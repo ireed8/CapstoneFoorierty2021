@@ -78,7 +78,7 @@ router.hooks({
       case "Blog":
         state.Blog.posts = [];
         axios
-          .get("https://jsonplaceholder.typicode.com/posts/")
+          .get("https://jsonplaceholder.typicode.com/posts/1/comments/")
           .then(response => {
             response.data.forEach(post => {
               state.Blog.posts.push(post);

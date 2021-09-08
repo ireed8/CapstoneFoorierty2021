@@ -1,7 +1,7 @@
 import html from "html-literal";
 
-export default () => html`
-  <footer>
-    &copy; 2021 <a href="https://facebook.com" target="_blank">Ivan Reed</a>
-  </footer>
+export default st => html`
+  <header>
+    <h1>${st.header}</h1>
+  </header>
 `;

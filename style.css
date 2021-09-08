@@ -33,7 +33,13 @@ nav > ul > li {
 
 }
 
-
+p {
+  color: deepskyblue;
+  background: rrgb(162, 160, 170));
+  display: flex;
+  /* size: */
+  justify-content: space-between;
+}
 
 #Blog {
   margin-right: 3rem;
@@ -58,6 +64,43 @@ h1 {
   display: flex;
   /* size: */
   justify-content: space-between;
+}
+
+h4 {
+  color: deepskyblue;
+  background: rrgb(162, 160, 170));
+  display: flex;
+  /* size: */
+  justify-content: center;
+  align-items: flex-end;;
+}
+
+html {
+  background: https://x2b8u5q5.rocketcdn.me/wp-content/uploads/2018/10/meadow_creek_ts250_pulled_pork_chicken.jpg no-repeat center center fixed;
+  -webkit-scrollbar-track::-webkit-slider-thumb;
+  -moz-
+
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+h5 {
+  color: deepskyblue;
+  background: rgba(255, 0, 0, 0.5);
+  background-color: transparent;
+  display: flex;
+  opacity: 0.2;
+  justify-content: center;
+  align-items: flex-end;;
+  position:fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  }
+
 }
 
 body {
@@ -95,8 +138,8 @@ div {
 
 }
 
-/*
-.jumbotron {  {
+
+h7 {  {
     display: inline-block;
     text-decoration: none;
     border: 1px solid;
@@ -104,8 +147,8 @@ div {
     border-radius: 25px;
     text-align: end;
     position: -webkit-sticky;
-    top: 200%;
-} */
+    top: 600%;
+}
 
 div :hover {
   color: rgb(162, 160, 170));

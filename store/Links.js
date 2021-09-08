@@ -12,10 +12,6 @@ export default [
     text: "Contact"
   },
   {
-    title: "Blog",
-    text: "Blog"
-  },
-  {
     title: "Synonyums",
     text: "Synonyums My Food"
   }

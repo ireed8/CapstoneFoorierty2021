@@ -1,21 +1,21 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-// const greetings = require("./routers/greetings");
-// const pizzas = require("./routers/pizzas");
+const greetings = require("./routers/greetings");
+const pizzas = require("./routers/synonyums");
 
 dotenv.config();
 
 const app = express();
 
-// mongoose.connect(process.env.MONGODB);
-// const db = mongoose.connection;
+mongoose.connect(process.env.MONGODB);
+const db = mongoose.connection;
 
-// db.on("error", console.error.bind(console, "Connection error:"));
-// db.once(
-//   "open",
-//   console.log.bind(console, "Successfully opened connection to Mongo!")
-// );
+db.on("error", console.error.bind(console, "Connection error:"));
+db.once(
+  "open",
+  console.log.bind(console, "Successfully opened connection to Mongo!")
+);
 
 const logging = (request, response, next) => {
   console.log(`${request.method} ${request.url} ${Date.now()}`);
@@ -41,8 +41,8 @@ app.use(cors);
 app.use(express.json());
 app.use(logging);
 
-// app.use(greetings);
-// app.use(pizzas);
+app.use(greetings);
+app.use(synonyum);
 
 // Configuring Express instance
 app.get("/status", (request, response) => {

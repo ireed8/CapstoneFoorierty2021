@@ -25,24 +25,27 @@ dotenv.config();
 const router = new Navigo(window.location.origin);
 // console.log("ivan-process.env: ", process.env);
 
+function data() {
+  fetch("https://capstone314.herokuapp.com/")
+    .then(response => response.json)
+    .then(data => console.log(data));
+}
+
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
     ${Header(st)}
     ${Nav(state.Links)}
     ${Main(st)}
-    ${Footer()}
+    ${Footer(st)}
   `;
+
+  data();
 
   router.updatePageLinks();
 
   // eslint-disable-next-line no-undef
   addEventListeners(st);
 }
-// function data {
-//   fetch("/")
-//     .then(response => response.json);
-//     .then (datat => console.log(data));
-// }
 
 function addEventListeners(st) {
   // add event listeners to Nav items for navigation
@@ -90,27 +93,29 @@ router.hooks({
         break;
 
       case "Home":
-        state.Home.hits = [];
-
         axios
           .get(
-            `https://api.edamam.com/api/recipes/v2?type=public&q=fish&app_id=f0844243&app_key=a862c1a1db33241e55b7dcc323c93cfa`
+            `https://api.openweathermap.org/data/2.5/weather?q=fresno&appid=441977fc40e1ea7a970b348d7036aaa8`
           )
           .then(response => {
-            response.data.hits.forEach(hit => {
-              // console.log("hit hit"), hit.recipe);
-              state.Home.hits.push({
-                label: hit.recipe.label,
-                image: hit.recipe.image
-              });
-            });
+            state.Home.weather = {};
+            // console.log(response, state.Home.weather);
+            state.Home.weather.city = response.data.name;
+            state.Home.weather.temp = response.data.main.temp;
+            state.Home.weather.feelsLike = response.data.main.feels_like;
+            state.Home.weather.humidity = response.data.main.humidity;
+            state.Home.weather.description =
+              response.data.weather[0]["description"];
             done();
           })
           .catch(err => console.log(err));
+        break;
+
+      default:
+        done();
     }
   }
 });
-
 router
   .on({
     "/": () => render(state.Home),

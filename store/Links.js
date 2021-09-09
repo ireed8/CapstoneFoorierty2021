@@ -4,8 +4,8 @@ export default [
     text: "Home"
   },
   {
-    title: "Recipe",
-    text: "Recipe"
+    title: "Blog",
+    text: "Blog"
   },
   {
     title: "Stories",

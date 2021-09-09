@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const Synonyum = require("../models/synonyum");
+const synonyum = require("../models/synonyums");
 
 const router = Router();
 

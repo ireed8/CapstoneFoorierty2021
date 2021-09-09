@@ -6,30 +6,17 @@ import { capitalize } from "lodash";
 import dotenv from "dotenv";
 import axios from "axios";
 
-const cors = (req, res, next) => {
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "X-Requested-With,content-type, Accept,Authorization,Origin"
-  );
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-  );
-  res.setHeader("Access-Control-Allow-Credentials", true);
-  next();
-};
 
 dotenv.config();
 
 const router = new Navigo(window.location.origin);
 // console.log("ivan-process.env: ", process.env);
 
-function data() {
-  fetch("https://capstone314.herokuapp.com/")
-    .then(response => response.json)
-    .then(data => console.log(data));
-}
+// function data() {
+//   fetch("https://capstone314.herokuapp.com/")
+//     .then(response => response.json)
+//     .then(data => console.log(data));
+// }
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
@@ -39,7 +26,7 @@ function render(st = state.Home) {
     ${Footer(st)}
   `;
 
-  data();
+  // data();
 
   router.updatePageLinks();
 
@@ -56,18 +43,11 @@ function addEventListeners(st) {
     })
   );
 
-  // add menu toggle to bars icon in nav bar
-  document
-    .querySelector(".fa-bars")
-    .addEventListener("click", () =>
-      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
-    );
+
+
 }
 
-// function addEventListeners(st) {
-//   if (st.view === "Order") {
-//   }
-// }
+
 
 router.hooks({
   before: (done, params) => {

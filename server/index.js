@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const greetings = require("./routers/greetings");
-const pizzas = require("./routers/synonyums");
+const synonyums = require("./routers/synonyums");
 
 dotenv.config();
 
@@ -42,7 +42,7 @@ app.use(express.json());
 app.use(logging);
 
 app.use(greetings);
-app.use(synonyum);
+app.use(synonyums);
 
 // Configuring Express instance
 app.get("/status", (request, response) => {

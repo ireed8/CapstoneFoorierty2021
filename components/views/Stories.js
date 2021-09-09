@@ -3,9 +3,9 @@ import html from "html-literal";
 export default () => html`
 
 <h1>Smoking is Key</h1>
-<div>Menu</div>
+<div>By Ivan Reed</div>
 <ol>
-  <li>Grilling is Nice</li>
+  <li>Grilling is Nice but not as Nice as Smoking</li>
 </ol>
 <p class="intro"> Grilling is open cooking and rely more on the food to be cooked by heat rom the grill. Grilling can
   be with a propane grill or fire grill. Some people are able to grill inside with wood on an open fire and a huge

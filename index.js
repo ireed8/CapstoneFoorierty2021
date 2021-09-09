@@ -61,7 +61,7 @@ router.hooks({
       case "Blog":
         state.Blog.posts = [];
         axios
-          .get("https://world.openfoodfacts.org/api/v0/product/737628064502.json/")
+          .get("https://usman-recipes.herokuapp.com/api/recipes/")
           .then(response => {
             response.data.forEach(post => {
               state.Blog.posts.push(post);
@@ -71,6 +71,8 @@ router.hooks({
           })
           .catch(err => console.log(err));
         break;
+
+
 
       case "Home":
         axios

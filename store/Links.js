@@ -4,6 +4,10 @@ export default [
     text: "Home"
   },
   {
+    title: "Blog",
+    text: "Blog"
+  },
+  {
     title: "Stories",
     text: "Stories"
   },

@@ -61,7 +61,7 @@ router.hooks({
       case "Blog":
         state.Blog.posts = [];
         axios
-          .get("https://jsonplaceholder.typicode.com/posts/1/comments/")
+          .get("https://world.openfoodfacts.org/api/v0/product/737628064502.json/")
           .then(response => {
             response.data.forEach(post => {
               state.Blog.posts.push(post);

@@ -1,5 +1,4 @@
 
-
 h2 {
   padding-top: 100px;
   padding-right: 10px;
@@ -76,8 +75,7 @@ h4 {
 }
 
 html {
-  background: urlhttps://x2b8u5q5.rocketcdn.me/wp-content/uploads/2018/10/meadow_creek_ts250_pulled_pork_chicken.jpg no-repeat center center fixed;
-  -webkit-scrollbar-track::-webkit-slider-thumb;
+  background: url(https://x2b8u5q5.rocketcdn.me/wp-content/uploads/2018/10/meadow_creek_ts250_pulled_pork_chicken.jpg) no-repeat center center fixed;
 
 
 }
@@ -102,6 +100,7 @@ h5 {
   min-height: 100%;
   }
 
+}
 
 body {
   display: block;
@@ -139,7 +138,7 @@ div {
 }
 
 
-h7 {  {
+h7 {
     display: inline-block;
     text-decoration: none;
     border: 1px solid;
@@ -170,4 +169,4 @@ ol :hover {
   text-align: center;
   position: absolute;
   top: 150%;
-}
+

@@ -157,7 +157,7 @@ ol :hover {
   color: rgb(162, 160, 170));
 }
 
-#weather {
+/* #weather {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,5 +167,5 @@ ol :hover {
   border-radius: 25px;
   text-align: center;
   position: absolute;
-  top: 150%;
+  top: 150%; */
 

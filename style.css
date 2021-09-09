@@ -77,7 +77,7 @@ h4 {
 
 html {
   background: https://x2b8u5q5.rocketcdn.me/wp-content/uploads/2018/10/meadow_creek_ts250_pulled_pork_chicken.jpg no-repeat center center fixed;
-  -webkit-scrollbar-track::-webkit-slider-thumb;
+  -webkit-scrollbar-track::-webkit-slider-thumb
   -moz-
 
 }
@@ -102,7 +102,6 @@ h5 {
   min-height: 100%;
   }
 
-}
 
 body {
   display: block;
